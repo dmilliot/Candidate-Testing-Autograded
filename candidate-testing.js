@@ -46,7 +46,7 @@ function gradeQuiz(candidateAnswers) {
 
   let grade = 0;  //TODO 3.2 use this variable to calculate the candidates score.
   for (i=0; i<correctAnswers.length; i++) {
-    if (candidateAnswers[i] === correctAnswers[i]) {
+    if (candidateAnswers[i].toLowerCase() === correctAnswers[i].toLowerCase()) {
       grade += 20;
     } else {
       grade = grade
